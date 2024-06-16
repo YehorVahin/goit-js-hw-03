@@ -40,7 +40,7 @@ header .container{
     list-style-type: none;
     margin-right: 76px;
 }
-.menu-link a{
+.nav-item a{
     text-decoration: none;
     color: rgba(46, 47, 66, 1);
     font-size: 16px;
@@ -82,6 +82,14 @@ header .container{
     flex-direction: row;
     gap: 40px;
 }
+.carusel{
+    width: 900px;
+    height: 500px;
+}
+.car-image{
+    height: 500px;
+    width: 900px;
+}
 .card-menu{
     display: flex;
     flex-direction: row;
@@ -104,8 +112,6 @@ header .container{
 }
 .card img{
     height: 300px;
-    cursor: zoom-in;
-    
 }
 .navbar-brand:hover{
     color: rgba(64, 75, 191, 1);
@@ -125,10 +131,8 @@ header .container{
     justify-content: center;
     align-items: center;
 }
-.carousel{
-}
 #footer{
-    padding: 100px 0;
+    padding: 50px 200px;
     background-color: #2E2F42;
     display: flex;
     flex-direction: row;
@@ -141,28 +145,7 @@ header .container{
 #footer p{
     color: white;
 }
-@media screen and (max-width: 1280px) { 
-    div.card-menu {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        gap: 30px;
-    } 
-} 
-@media screen and (max-width: 1140px) { 
-    div.card-menu {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 200px;
-    }
-    div.card-menu img{
-        height: 300px;
-        width: 200px;
-    }
-} 
-@media screen and (max-width: 992px) { 
-    div.card-menu {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }  
+.soc-media{
+    display: flex;
+    flex-direction: column;
 }
