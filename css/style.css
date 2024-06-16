@@ -21,6 +21,10 @@ header .container{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+}
+.nav-menu{
+    width: 100%;
 }
 .menu{
     display: flex;
@@ -68,7 +72,10 @@ header .container{
     margin-right: 76px;
 }
 .web-logo{
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
     color: rgba(77, 90, 229, 1);
+    font-size: 24px;
 }
 .address-menu{
     display: flex;
@@ -201,6 +208,11 @@ label, a{
 #slides .image{
 	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
+.d-block{
+    position: relative;
+    height: 500px;
+    width: 500%;
+}
 .card-menu{
     display: flex;
     flex-direction: row;
@@ -218,14 +230,16 @@ label, a{
     border: 1px solid black;
     border-radius: 2%;
     border-color: #2E2F42;
+    min-width: 200px;
+    min-height: 350px;
 }
 .card img{
     height: 300px;
     cursor: zoom-in;
     
 }
-.card img:active{
-    
+.navbar-brand:hover{
+    color: rgba(64, 75, 191, 1);
 }
 .card-one{
     border: 1px solid #e7e9fc;
@@ -257,6 +271,28 @@ label, a{
 #footer p{
     color: white;
 }
-@media screen and (max-width: 1280px) { div.contentblock {width: 1200px;} } 
-@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} } 
-@media screen and (max-width: 992px) { div.contentblock {width: 970px;} }
+@media screen and (max-width: 1280px) { 
+    div.card-menu {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 30px;
+    } 
+} 
+@media screen and (max-width: 1140px) { 
+    div.card-menu {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 200px;
+    }
+    div.card-menu img{
+        height: 300px;
+        width: 200px;
+    }
+} 
+@media screen and (max-width: 992px) { 
+    div.card-menu {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }  
+}
