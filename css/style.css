@@ -94,7 +94,7 @@ header .container{
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    row-gap: 48px;
+    row-gap: 45px;
     column-gap: 24px;
     flex-wrap: wrap;
     padding-top: 120px;
@@ -111,7 +111,6 @@ header .container{
 }
 .card img{
     max-width: 100%;
-    max-height: 100%;
 }
 .navbar-brand:hover{
     color: rgba(64, 75, 191, 1);
