@@ -84,12 +84,6 @@ header .container{
     flex-direction: row;
     gap: 40px;
 }
-.slide{
-    margin-left: 25%;
-    margin-right: 25%;
-    visibility: visible;
-    display: flex;
-}
 .card-menu{
     display: flex;
     flex-direction: row;
@@ -111,13 +105,25 @@ header .container{
     border-color: #2E2F42;
     max-width: 100%;
 }
-.card img{
-    max-width: 100%;
-}
+.card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+.card-text {
+    padding: 5px;
+    font-size: 16px;
+    color: #fff;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
 .navbar-brand:hover{
     color: rgba(64, 75, 191, 1);
 }
-.card-one{
+.card-body{
     border: 1px solid #e7e9fc;
     padding: 32px 16px;
     margin-bottom: 8px;
@@ -127,16 +133,23 @@ header .container{
     color: #fff;
 }
 .image-slider{
-    padding: 30px 0 40px 0;
 }
-.wrapper{
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after{
+    color: #fff;
+    font-size: 50px;
+}
+.image-slider .swiper-button-prev {
+  left: 10px;
+}
+
+.image-slider .swiper-button-next {
+  right: 10px;
+}
+.title{
     
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 0 30px;
-    min-height: 100%;
     background-color: #2E2F42;
-    min-width: 0;
+    
 }
 .image-slider_image{
     text-align: center;
@@ -145,11 +158,11 @@ header .container{
     max-width: 100%;
 }
 #footer{
-    padding: 50px 200px;
     background-color: #2E2F42;
+    color: #fff;
+    padding: 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 #footer .logo{
@@ -160,5 +173,52 @@ header .container{
 }
 .soc-media{
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
+@media (max-width: 768px) {
+    footer {
+      padding: 50px;
+    }
+   .container {
+      padding: 20px;
+    }
+   .soc-media {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+   .soc-media p {
+      margin-bottom: 10px;
+    }
+   .insta {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Mobile styles (max-width: 480px) */
+  @media (max-width: 480px) {
+    footer {
+      padding: 50px;
+    }
+   .container {
+      padding: 5px;
+    }
+   .soc-media {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+   .soc-media p {
+      margin-bottom: 5px;
+    }
+   .insta {
+      margin-bottom: 5px;
+    }
+   .logo {
+      font-size: 16px;
+    }
+   .footer-text {
+      font-size: 12px;
+    }
+  }
+  #footer .logo{
+    color: #fff;
+  }
