@@ -11,3 +11,10 @@ const swiper = new Swiper('.swiper',{
 		delay: 5000,
 	  },
 });
+const imgZoom = document.querySelectorAll('.img-zoom');
+
+imgZoom.forEach(img => {
+  img.addEventListener('click', () => {
+    img.classList.toggle('zoomed');
+  });
+});

@@ -217,4 +217,26 @@ header .container{
   #footer .logo{
     color: #fff;
   } 
+  .img-zoom {
+    transition: transform 0.5s; /* add transition effect */
+    cursor: zoom-in; /* change cursor on hover */
+  }
+  
+  /* .img-zoom:hover {
+    transform: scale(1.5); /* zoom in on hover 
+  }
+   */
+  .img-zoom:active {
+    transform: scale(1); /* reset zoom on click */
+    cursor: zoom-out; /* change cursor on click */
+    position: absolute; /* make the image absolute */
+  z-index: 1; /* bring the image to the front */
+  top: 50%; /* center the image vertically */
+  left: 50%; /* center the image horizontally */
+  transform: translate(-50%, -50%) scale(1.5);
+  }
+  .img-zoom.zoomed {
+    transform: scale(1.5);
+    cursor: zoom-out;
+  }
   
