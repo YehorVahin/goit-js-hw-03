@@ -152,14 +152,15 @@ header .container{
 }
 .image-slider_image img{
     max-width: 100%;
+    height: 400px;
 }
 #footer{
     background-color: #2E2F42;
     color: #fff;
-    padding: 50px;
+    padding: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 #footer .logo{
@@ -168,12 +169,7 @@ header .container{
 #footer p{
     color: white;
 } 
-.soc-media{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
+
  @media (max-width: 768px) {
     footer {
       padding: 50px;
