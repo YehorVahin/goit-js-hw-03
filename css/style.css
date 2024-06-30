@@ -132,8 +132,6 @@ header .container{
     margin: 0;
     color: #fff;
 }
-.image-slider{
-}
 .swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after{
     color: #fff;
@@ -147,9 +145,7 @@ header .container{
   right: 10px;
 }
 .title{
-    
     background-color: #2E2F42;
-    
 }
 .image-slider_image{
     text-align: center;
@@ -162,7 +158,8 @@ header .container{
     color: #fff;
     padding: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 #footer .logo{
@@ -170,12 +167,12 @@ header .container{
 }
 #footer p{
     color: white;
-}
+} 
 .soc-media{
     display: flex;
-    align-items: center;
+    gap: 20px;
 }
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     footer {
       padding: 50px;
     }
@@ -221,4 +218,5 @@ header .container{
   }
   #footer .logo{
     color: #fff;
-  }
+  } 
+  
