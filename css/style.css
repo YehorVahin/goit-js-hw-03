@@ -259,4 +259,18 @@ header .container{
   .modal__close:focus-visible{
     outline-color: green;
   }
-  
+  .back-to-top {
+    background: #3E64FF;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -50px;
+    padding: 10px 12px;
+    right: 50px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.back-to-top.active {
+    bottom: 50px;
+    transition: 0.3s all;
+}
