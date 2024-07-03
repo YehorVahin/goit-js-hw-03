@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -22,7 +23,7 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav menu">
                       <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Обручки</a>
                       </li>
@@ -69,17 +70,21 @@
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <section class="catalog">
             <ul class="card-menu">
-                <li><div class="card" style="width: 18rem;"><img src="images/wedding-rings/w1.jpg" class="card-img-top" >
-                    <div class="card-body">
-                    <h3 class="card-title name">Артикул:</h3>
-                    <p class="card-text card-p">Середня вага:</p>
-                    <button class="btn1 btn btn-primary">Детальніше</button>
-                    </div>
-                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="images/wedding-rings/w1.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
                 <div class="modal">
                     <div class="modal__main">
@@ -100,12 +105,16 @@
                         <button class="modal__close">&#10006;</button>
                     </div>
                 </div>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w2.jpg" class="card-img-top" >
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
-                        <button class=" btn2 btn btn-primary">Детальніше</button>
-                    </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="images/wedding-rings/w2.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
                 <div class="modal modal1">
                     <div class="modal__main">
@@ -126,12 +135,16 @@
                         <button class="modal__close">&#10006;</button>
                     </div>
                 </div>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w3.jpg" class="card-img-top" >
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
-                        <button class=" btn3 btn btn-primary">Детальніше</button>
-                    </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="images/wedding-rings/w3.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
                 <div class="modal modal2">
                     <div class="modal__main">
@@ -152,144 +165,696 @@
                         <button class="modal__close">&#10006;</button>
                     </div>
                 </div>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w4.jpg" class="card-img-top" >
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
-                    </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w5.jpg" class="card-img-top" >
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal3">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w6.jpg" class="card-img-top" >
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w7.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w8.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w9.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w10.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w11.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w12.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w13.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w14.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w15.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w16.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w17.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w18.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w19.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w20.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w21.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w22.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w22.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w23.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <<button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w24.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
-                <li class="card" style="width: 18rem;"><img src="images/wedding-rings/w25.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title name">Артикул:</h3>
-                        <p class="card-text card-p">Середня вага:</p>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
                     </div>
+                </div>
+                <li class="item">
+                    <article class="item-body"><div class="card-image" style="width: 18rem;"><img src="https://www.vancleefarpels.com/content/dam/rcq/vca/16/26/44/5/1626445.png.transform.vca-w350-1x.png" class="card-img-top"  data-toggle="modal" data-target="#imageModal"></div>
+                        <div class="card-body">
+                            <div position="0">
+                            <h2 class="card-text">Артикул:</h2>
+                            <p class="card-text">Середня вага:</p>
+                            <button class=" btn3 btn btn-outline-secondary">Детальніше</button>
+                            </div>
+                        </div>
+                    </article>
                 </li>
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/b2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/2.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/3.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/4.jpg" alt=""></div></div>
+                                <div class="swiper-slide"><div class="image-slider_image"><img src="images/5.jpg" alt=""></div></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="modal__container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, soluta!</p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
+                    </div>
+                </div>
             </ul>
         </section>
         <div id="back_to_top" class="back-to-top">
@@ -321,6 +886,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src = "http://code.jquery.com/jquery-latest.js"></script>
+    <script src="script/scryptjq.js"></script>
     <script src="script/script.js"></script>
 </body>
 </html>
