@@ -267,14 +267,23 @@ main{
   .item{
     width: 100%;
   }
+  .card-image{
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .item{
     width: 100%;
   }
+  .card-image{
+    width: 100%;
+  }
 }
 @media (max-width: 1024px) {
   .item{
+    width: 100%;
+  }
+  .card-image{
     width: 100%;
   }
 }
