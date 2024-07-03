@@ -48,6 +48,9 @@ header .container{
     letter-spacing: 2%;
     padding: 24px 0;
 }
+.nav-item{
+  padding-right: 20px;
+}
 .menu-link a:hover{
     color: rgba(64, 75, 191, 1);
 }
