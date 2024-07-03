@@ -93,8 +93,9 @@ main{
     align-items: center;
     list-style-type: none;
     flex-wrap: wrap;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 0;
 }
 .item{
   border: 1px solid #ccc;
@@ -107,7 +108,6 @@ main{
 }
 .card-title {
     font-weight: bold;
-    margin-bottom: 10px;
     color: #000;
   }
 .card-text {
@@ -270,6 +270,12 @@ main{
   .card-image{
     width: 100%;
   }
+  .card-menu{
+    padding: 0;
+  }
+  .modal__main{
+    max-width: 480px;
+  }
 }
 @media (max-width: 768px) {
   .item{
@@ -277,6 +283,12 @@ main{
   }
   .card-image{
     width: 100%;
+  }
+  .card-menu{
+    padding: 0;
+  }
+  .modal__main{
+    max-width: 768px;
   }
 }
 @media (max-width: 1024px) {
