@@ -194,7 +194,7 @@ header .container{
     }
   }
   #footer .logo{
-    color: #fff;
+    color: #000;
   } 
   .modal{
     position: fixed;
@@ -251,4 +251,14 @@ header .container{
 .back-to-top.active {
     bottom: 50px;
     transition: 0.1s all;
+}
+@media (max-width: 480px) {
+  .item{
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .item{
+    width: 100%;
+  }
 }
