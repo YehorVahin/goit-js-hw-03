@@ -327,6 +327,11 @@ main{
 }
 @media only screen and (max-width: 767px) {
   .modal .swiper{
-    width: 100%;
+    width: 200px;
+    height: 300px;
+  }
+  .modal .swiper img{
+    width: 200px;
+    height: 300px;
   }
 }
