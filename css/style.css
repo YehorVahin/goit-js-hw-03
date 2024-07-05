@@ -335,7 +335,7 @@ main{
     height: 300px;
   }
   .swiper .swiper-button-prev::after,
-.swiper .swiper-button-next::after{
+  .swiper .swiper-button-next::after{
     display: none;
 }
 }
