@@ -54,28 +54,18 @@ const modalController = ({modal, btnOpen, btnClose}) => {
 
 	modalElems.addEventListener('click', closeModal)};
 	modalController({
-		modal: '.modal',
-		btnOpen: '.btn',
+		modal: '.modalw1',
+		btnOpen: '.btnw1',
 		btnClose: '.modal__close',
 	});
 	modalController({
-		modal: '.modal1',
-		btnOpen: '.btn2',
+		modal: '.modalw2',
+		btnOpen: '.btnw2',
 		btnClose: '.modal__close',
 	});
 	modalController({
-		modal: '.modal2',
-		btnOpen: '.btn3',
-		btnClose: '.modal__close',
-	});
-	modalController({
-		modal: '.modal3',
-		btnOpen: '.btn4',
-		btnClose: '.modal__close',
-	});
-	modalController({
-		modal: '.modal',
-		btnOpen: '.btn2',
+		modal: '.modalw3',
+		btnOpen: '.btnw3',
 		btnClose: '.modal__close',
 	});
 	modalController({
