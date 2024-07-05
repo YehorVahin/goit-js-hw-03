@@ -339,3 +339,17 @@ main{
     display: none;
 }
 }
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal .swiper{
+    width: 300px;
+    height: 400px;
+  }
+  .modal .swiper img{
+    width: 200px;
+    height: 300px;
+  }
+  .swiper .swiper-button-prev::after,
+  .swiper .swiper-button-next::after{
+    display: none;
+}
+}
