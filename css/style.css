@@ -128,7 +128,7 @@ main{
 }
 .swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after{
-    color: #fff;
+    color: #000;
     font-size: 50px;
 }
 .title{
@@ -218,7 +218,7 @@ main{
   .modal__main{
     position: relative;
     max-width: 600px;
-    background-color: azure;
+    background-color: #fff;
     margin: auto;
     color: #000;
     border-radius: 16px;
@@ -298,4 +298,30 @@ main{
   .card-image{
     width: 100%;
   }
+}
+.modal .swiper{
+  height: 300px;
+}
+.modal .swiper img{
+  height: 300px;
+  width: 400px;
+}
+@media only screen and (min-width: 1200px) {
+  .back-to-top {
+       right: 100px;
+   }
+}
+
+/* For tablet screens */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .back-to-top {
+       right: 50px;
+   }
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 767px) {
+  .back-to-top {
+       right: 20px;
+   }
 }
