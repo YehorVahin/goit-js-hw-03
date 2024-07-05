@@ -78,3 +78,13 @@ const modalController = ({modal, btnOpen, btnClose}) => {
 		btnOpen: '.btn2',
 		btnClose: '.modal__close',
 	});
+	modalController({
+		modal: '.modalbr1',
+		btnOpen: '.btnbr1',
+		btnClose: '.modal__close',
+	});
+	modalController({
+		modal: '.modalbr2',
+		btnOpen: '.btnbr2',
+		btnClose: '.modal__close',
+	});
