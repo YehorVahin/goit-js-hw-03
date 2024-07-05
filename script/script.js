@@ -23,7 +23,8 @@ const modalController = ({modal, btnOpen, btnClose}) => {
 	const buttonElems = document.querySelectorAll(btnOpen);
 	const modalElems = document.querySelector(modal);
 
-	modalElems.style.cssText = `
+	modalElems.style.cssText = 
+	`
 		display: flex;
 		visibility: hidden;
 		opasity: 0;
@@ -69,8 +70,8 @@ const modalController = ({modal, btnOpen, btnClose}) => {
 		btnClose: '.modal__close',
 	});
 	modalController({
-		modal: '.modalbr1',
-		btnOpen: '.btnbr1',
+		modal: '.modalbr',
+		btnOpen: '.itembr',
 		btnClose: '.modal__close',
 	});
 	modalController({
