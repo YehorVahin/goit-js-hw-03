@@ -1,3 +1,4 @@
+'use strict';
 const swiper = new Swiper('.swiper',{
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -19,63 +20,62 @@ const swiper = new Swiper('.swiper',{
 	  },
 });
 
-const modalController = ({modal, btnOpen, btnClose}) => {	
+const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
 	const buttonElems = document.querySelectorAll(btnOpen);
-	const modalElems = document.querySelector(modal);
-
-	modalElems.style.cssText = 
-	`
-		display: flex;
-		visibility: hidden;
-		opasity: 0;
-		transition: opacity 300ms ease-in-out;
-		min-width: 0;
+	const modalElem = document.querySelector(modal);
+	console.log(modalElem == null);
+	modalElem.style.cssText = `
+	  display: flex;
+	  visibility: hidden;
+	  opacity: 0;
+	  transition: opacity ${time}ms ease-in-out;
 	`;
-
+  
 	const closeModal = event => {
-		const target = event.target;
-
-		if(target === modalElems || target.closest(btnClose)){
-			modalElems.style.opacity = 0;
-
-			setTimeout(() =>{
-				modalElems.style.visibility = 'hidden';
-			}, 300)
-		}
+	  const target = event.target;
+  
+	  if (
+		target === modalElem ||
+		(btnClose && target.closest(btnClose)) ||
+		event.code === 'Escape'
+		) {
+		
+		modalElem.style.opacity = 0;
+  
+		setTimeout(() => {
+		  modalElem.style.visibility = 'hidden';
+		}, time);
+  
+		window.removeEventListener('keydown', closeModal);
+	  }
 	}
-
+  
 	const openModal = () => {
-		modalElems.style.visibility = 'visible';
-		modalElems.style.opacity = 1;
+	  modalElem.style.visibility = 'visible';
+	  modalElem.style.opacity = 1;
+	  window.addEventListener('keydown', closeModal)
 	};
-
+  
 	buttonElems.forEach(btn => {
-		btn.addEventListener('click', openModal)
+	  btn.addEventListener('click', openModal);
 	});
-
-	modalElems.addEventListener('click', closeModal)};
-	modalController({
-		modal: '.modalw1',
-		btnOpen: '.btnw1',
-		btnClose: '.modal__close',
-	});
+  
+	modalElem.addEventListener('click', closeModal);
+  };
 	modalController({
 		modal: '.modalw2',
 		btnOpen: '.btnw2',
 		btnClose: '.modal__close',
 	});
 	modalController({
-		modal: '.modalw3',
-		btnOpen: '.btnw3',
+		modal: '.modal',
+		btnOpen: '.btn',
 		btnClose: '.modal__close',
 	});
 	modalController({
-		modal: '.modalbr',
-		btnOpen: '.itembr',
+		modal: '.modal_br',
+		btnOpen: '.btn_br',
 		btnClose: '.modal__close',
 	});
-	modalController({
-		modal: '.modalbr2',
-		btnOpen: '.btnbr2',
-		btnClose: '.modal__close',
-	});
+	
+	
