@@ -294,8 +294,8 @@ main{
 }
 @media only screen and (max-width: 767px) {
   .popup .swiper{
-    width: 100px;
-    height: 200px;
+    width: 100%;
+    
   }
   .popup_content{
     width: 100%;
