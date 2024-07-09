@@ -4,10 +4,6 @@ const swiper = new Swiper('.swiper',{
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
 	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	  },
 	simulateTouch: false,
   	loop: true,
 	speed: 400,
@@ -20,62 +16,126 @@ const swiper = new Swiper('.swiper',{
 	  },
 });
 
-const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
-	const buttonElems = document.querySelectorAll(btnOpen);
-	const modalElem = document.querySelector(modal);
-	console.log(modalElem == null);
-	modalElem.style.cssText = `
-	  display: flex;
-	  visibility: hidden;
-	  opacity: 0;
-	  transition: opacity ${time}ms ease-in-out;
-	`;
-  
-	const closeModal = event => {
-	  const target = event.target;
-  
-	  if (
-		target === modalElem ||
-		(btnClose && target.closest(btnClose)) ||
-		event.code === 'Escape'
-		) {
-		
-		modalElem.style.opacity = 0;
-  
-		setTimeout(() => {
-		  modalElem.style.visibility = 'hidden';
-		}, time);
-  
-		window.removeEventListener('keydown', closeModal);
-	  }
-	}
-  
-	const openModal = () => {
-	  modalElem.style.visibility = 'visible';
-	  modalElem.style.opacity = 1;
-	  window.addEventListener('keydown', closeModal)
-	};
-  
-	buttonElems.forEach(btn => {
-	  btn.addEventListener('click', openModal);
-	});
-  
-	modalElem.addEventListener('click', closeModal);
-  };
-	modalController({
-		modal: '.modalw2',
-		btnOpen: '.btnw2',
-		btnClose: '.modal__close',
-	});
-	modalController({
-		modal: '.modal',
-		btnOpen: '.btn',
-		btnClose: '.modal__close',
-	});
-	modalController({
-		modal: '.modal_br',
-		btnOpen: '.btn_br',
-		btnClose: '.modal__close',
-	});
-	
-	
+const popupLinks = document.querySelectorAll('.popup-link');
+const popupCloseIcons = document.querySelectorAll('.close-popup');
+const body = document.querySelector('body');
+const lockPadding = document.querySelectorAll('.lock-padding');
+
+let unlock = true;
+
+const timeout = 800;
+
+if (popupLinks.length > 0) {
+  popupLinks.forEach((popupLink) => {
+    popupLink.addEventListener('click', (e) => {
+      const popupName = popupLink.getAttribute('href').replace('#', '');
+      const currentPopup = document.getElementById(popupName);
+      popupOpen(currentPopup);
+      e.preventDefault();
+    });
+  });
+}
+
+if (popupCloseIcons.length > 0) {
+  popupCloseIcons.forEach((closeIcon) => {
+    closeIcon.addEventListener('click', (e) => {
+      popupClose(closeIcon.closest('.popup'));
+      e.preventDefault();
+    });
+  });
+}
+
+function popupOpen(currentPopup) {
+  if (currentPopup && unlock) {
+    const popupActive = document.querySelector('.popup.open');
+
+    if (popupActive) {
+      popupClose(popupActive, false);
+    } else {
+      bodyLock();
+    }
+
+    currentPopup.classList.add('open');
+    currentPopup.addEventListener('click', (e) => {
+      if (!e.target.closest('.popup_content')) {
+        popupClose(e.target.closest('.popup'));
+      }
+    });
+  }
+}
+
+function popupClose(popupActive, doUnlock = true) {
+  if (unlock) {
+    popupActive.classList.remove('open');
+
+    if (doUnlock) {
+      bodyUnlock();
+    }
+  }
+}
+
+function bodyLock() {
+  const lockPaddingValue = window.innerWidth - document.querySelector('.catalog').offsetWidth + 'px';
+
+  if (lockPadding.length > 0) {
+    lockPadding.forEach((el) => {
+      el.style.paddingRight = lockPaddingValue;
+    });
+  }
+
+  body.style.paddingRight = lockPaddingValue;
+  body.classList.add('lock');
+  unlock = false;
+
+  setTimeout(() => {
+    unlock = true;
+  }, timeout);
+}
+
+function bodyUnlock() {
+  setTimeout(() => {
+    if (lockPadding.length > 0) {
+      lockPadding.forEach((el) => {
+        el.style.paddingRight = '0px';
+      });
+    }
+
+    body.style.paddingRight = '0px';
+    body.classList.remove('lock');
+  }, timeout);
+
+  unlock = false;
+
+  setTimeout(() => {
+    unlock = true;
+  }, timeout);
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.which === 27) {
+    const popupActive = document.querySelector('.popup.open');
+    popupClose(popupActive);
+  }
+});
+
+(function() {
+  if (!Element.prototype.closest) {
+    Element.prototype.closest = function(css) {
+      var node = this;
+      while (node) {
+        if (node.matches(css)) return node;
+        else node = node.parentElement;
+      }
+      return null;
+    }
+  }
+})();
+
+(function() {
+  if (!Element.prototype.matches) {
+    Element.prototype.matches = Element.prototype.matchesSelector ||
+      Element.prototype.webkitMatchesSelector ||
+      Element.prototype.mozMatchesSelector ||
+      Element.prototype.msMatchesSelector;
+  }
+})();
